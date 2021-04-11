@@ -1,0 +1,407 @@
+nav {
+    height: 70px;
+    width: 65%;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    line-height: 1.4;
+    font-size: 30px;
+}
+
+nav li a:hover {
+    color: white;
+    background: rgb(17, 17, 17);
+}
+
+#list1 {
+    background-color: rgb(80, 80, 80);
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 176.67px;
+}
+
+#list1 a {
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+
+#li3:hover #list1 {
+    display: block;
+}
+
+#js {
+    padding: 14px 0px;
+    font-size: 15px;
+}
+
+#boot {
+    padding: 14px 0px;
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    width: 35%;
+    height: 70px;
+    background-image: linear-gradient(300deg, white 35%, rgb(164 222 255) 100%);
+}
+
+header img {
+    width: 70px;
+    height: 100%;
+    float: right;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header span {
+    font-size: 30px;
+    line-height: 70px;
+    text-shadow: 2px 2px white;
+}
+
+main {
+    margin: 3px 0px 3px 5px;
+    width: 60%;
+    height: 400px;
+    float: right;
+    animation-name: backimage1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@keyframes backimage1 {
+    0% {
+        background-color: white;
+    }
+    30% {
+        background-color: rgb(233, 255, 254);
+    }
+    100% {
+        background-color: rgb(212 239 255);
+    }
+}
+
+main article {
+    width: 600px;
+    height: 360px;
+    background-image: url(https://bit.ly/3254zjc);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 4.5%;
+    left: 14%;
+    border-radius: 5px;
+    box-shadow: 6px 6px #9699a2;
+}
+
+article div {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    width: 60%;
+    height: 70px;
+    border-width: 4px;
+    border-bottom-style: solid;
+    font-size: 20px;
+}
+
+aside {
+    float: left;
+    width: 39.5%;
+    height: 270px;
+    margin: 3px 0px;
+    text-align: center;
+}
+
+aside img {
+    width: 80%;
+    height: 200px;
+    border: 3px solid #a3fbff;
+}
+
+#img123 {
+    padding: 10px;
+    height: 80px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center
+}
+
+div img {
+    width: 60px;
+    background-color: white;
+    height: 60px;
+    border: 2px black;
+    border-bottom-style: solid;
+    margin: 0 3px;
+    padding: 5px;
+}
+
+div img:hover {
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    margin: 0px;
+    border: 5px #0072ff;
+    border-bottom-style: solid;
+}
+
+@media only screen and (max-width: 1250px) {
+    main article {
+        position: relative;
+        left: 11%;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    main article {
+        position: relative;
+        left: 6%;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    main article {
+        position: relative;
+        left: 4%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    main article {
+        width: 580px;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    main article {
+        width: 500px;
+        left: 9%;
+    }
+}
+
+@media only screen and (max-width: 1029px) {
+    header span {
+        font-size: 23px;
+    }
+    main article {
+        width: 90%;
+        left: 5%;
+    }
+    main {
+        width: 100%;
+    }
+    aside {
+        height: 310px;
+        width: 100%;
+    }
+    aside img {
+        width: 49%;
+        float: right;
+        height: 250px;
+        margin-left: 10px;
+    }
+    #img123 img {
+        width: 85px;
+        height: 80px;
+    }
+    #img123 {
+        width: 46%;
+    }
+    #img123 img:hover {
+        width: 100px;
+        height: 100px;
+    }
+    #img123 a {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    nav li {
+        width: 150px;
+    }
+    nav li a {
+        line-height: 2.1;
+        font-size: 20px;
+    }
+    #img123 img {
+        width: 60px;
+        height: 60px;
+    }
+    #img123 img:hover {
+        width: 70px;
+        height: 70px;
+    }
+    #list1 {
+        width: 144.45px;
+    }
+}
+
+@media only screen and (max-width: 783px) {
+    header span {
+        font-size: 20px;
+    }
+    #img123 {
+        width: 35%;
+    }
+    #img123 img {
+        width: 40px;
+        height: 40px;
+    }
+    aside img {
+        width: 58%;
+    }
+    #img123 img:hover {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media only screen and (max-width: 726px) {
+    nav li {
+        width: 110px;
+    }
+    nav li a {
+        padding: 14px 15px;
+    }
+    #list1 {
+        width: 94.5px;
+    }
+    #list1 #js, #list1 #boot {
+        font-size: 15px;
+    }
+    header span {
+        margin-left: 10px;
+        line-height: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    #img123 img:hover {
+        width: 50px;
+        height: 50px;
+    }
+    #img123 img {
+        width: 35px;
+        height: 35px;
+    }
+    nav ul {
+        display: contents;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #img123 {
+        padding: 4px;
+        width: 34%;
+    }
+    #img123 img {
+        width: 28px;
+        height: 28px;
+    }
+    nav li {
+        width: 81px;
+    }
+    article div {
+        width: 70%;
+    }
+    aside img {
+        width: 60%;
+    }
+    #li1 {
+        margin: 0px 0px 0px 15px;
+    }
+}
+
+@media only screen and (max-width: 423px) {
+    #img123 {
+        width: 100%;
+        margin: auto;
+    }
+    #img123 a {
+        width: 25%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    aside img {
+        width: 96%;
+        margin: 2px;
+    }
+    nav {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    article div {
+        display: inline-table;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    nav li {
+        width: 32%;
+    }
+    nav li a {
+        font-size: 16px;
+        padding: 18.5px 16px;
+    }
+    #list1 {
+        text-align: center;
+        width: 30%;
+    }
+    #list1 a {
+        display: inline;
+        font-size: 16px;
+    }
+    #list1 #ht {
+        padding: 10px 18px;
+    }
+    #list1 #cs {
+        padding: 10px 27px;
+    }
+    #list1 #js {
+        padding: 6px 0px;
+        font-size: 14.5px;
+    }
+    #list1 #boot {
+        padding: 6px 1.2px;
+        font-size: 14px;
+    }
+}
